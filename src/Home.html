@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
     
 </head>
 <body>
@@ -11,8 +12,10 @@
         
         <nav>
                 <a href="Home.html"> <img class="logo" src="images/orginallogo.png" alt="my logo"></a>
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
+                
+                <label for="menu-toggle" class="menu-icon">&#9776; </label>
+                <ul class="dropdown">
+                    <li class="homes"><a href="Home.html">Home</a></li>
                     <li><a href="aboutme.html">About me</a></li>
                     <li><a href="skills.html">Skills</a></li>
                     <li><a href="Education.html">Education</a></li>
@@ -25,12 +28,10 @@
     </header>
     <section class="intro">
         
-            
-            <h1 id="myh1">Hi, I'm Bisrat Like Melak!</h1>
-             <p id="mypar">I'm an enthusiastic software engineer.</p>
-         </section>
-         <button class="mybutton">Learn more</button>
-    
+        <h1 id="myh1">Hi, I'm Bisrat Like Melak!</h1>
+        <div class="grid-container"> <p id="mypar">I'm an enthusiastic software engineer.</p></div>
+        <div class="grid-container"> <a class="mybutton" href="aboutme.html">know more</a></div>
+        </section>
         <div class="container">
             <figure>   
             <a href="https://github.com/bisratlike"><img src="images/GitHub.png" alt="github"></a>
@@ -39,23 +40,23 @@
             <a href="https://leetcode.com/bisratlike/"><img src="images/leetcode.png" alt="leetcode"></a>
                    </figure>
                    <figure>
-            <a href="https://www.linkedin.com/in/bisrat-melak/"><img src="images/LinkedIn_logo_initials.png.webp" alt="linkedin"></a>
+            <a href="https://www.linkedin.com/in/bisrat-melak/"><img src="images/linkedin.png" alt="linkedin"></a>
                    </figure>
                    <figure>
-            <a href="https://t.me/befiyona"><img src="images/Telegram_logo.svg.webp" alt="telegram"></a>
+            <a href="https://t.me/befiyona"><img src="images/telegram.jpeg" alt="telegram"></a>
                    </figure>
                    <figure>
-            <a href="https://instagram.com/ethio_lifey?igshid=YzAwZjE1ZTI0Zg=="><img src="images/Instagram.webp" alt="Instagram"></a>
+            <a href="https://instagram.com/ethio_lifey?igshid=YzAwZjE1ZTI0Zg=="><img src="images/instagram.jpeg" alt="Instagram"></a>
                    </figure>
         </div>
     <hr>
     <footer>
-        <figure><a href="https://mail.google.com/mail/bisratmelak1@gmail.com"> <img id="gmail" src="images/gmail-logo.webp" alt="gmail"> bisratmelak1@gmail.com</a></figure>
+        <figure><a href="https://mail.google.com/mail/bisratmelak1@gmail.com"> <img id="gmail" src="images/gmail.png" alt="gmail"> bisratmelak1@gmail.com</a></figure>
 
         <ul class="footerlist">
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="aboutme.html">About me</a></li>
-            <li><a href="skills.html">Skills</a></li>
+            <li ><a href="Home.html">Home</a></li>
+            <li ><a href="aboutme.html">About me</a></li>
+            <li ><a href="skills.html">Skills</a></li>
             <li><a href="Explorewithme.html">Explore with me</a></li>
             <li><a href="hobbies.html">Hobbies</a></li>
             <li><a href="Education.html">Education</a></li>
