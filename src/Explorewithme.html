@@ -1,194 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-   
-</head>
-<body>
-    <header>
-        
-        <nav>
-                <a href="Home.html"> <img class="logo" src="images/orginallogo.png" alt="my logo"></a>
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="aboutme.html">About me</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="Education.html">Education</a></li>
-                    <li><a href="hobbies.html">Hobbies</a></li>
-                    <li><a href="Explorewithme.html">Explore with me</a></li>
-                    <li><a href="contactme.html">Contact me</a></li>
-                </ul>
-            
-        </nav>
-    </header>
-    <section class="video-section">
-        <h1>from some of</h1>
-        <figure>
-            <video src="images/tripvideo.mp4" controls></video>
-    
-            <figcaption>A trip in <i>naberzhini chelni, russia.</i>  July.2023</figcaption>
-    
-        </figure>
-        
-          
-          
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+          <a class="nav__logo" href="Home.html">
+              <img class="logo" src="images/orginallogo.png" alt="my logo">
+          </a>
+  
+          <label for="menu-toggle" class="nav__menu-icon">&#9776;</label>
+  
+          <ul class="nav__dropdown">
+              <li class="nav__item homes"><a href="Home.html">Home</a></li>
+              <li class="nav__item"><a href="aboutme.html">About me</a></li>
+              <li class="nav__item"><a href="skills.html">Skills</a></li>
+              <li class="nav__item"><a href="Education.html">Education</a></li>
+              <li class="nav__item"><a href="hobbies.html">Hobbies</a></li>
+              <li class="nav__item"><a href="Explorewithme.html">Explore with me</a></li>
+              <li class="nav__item"><a href="contactme.html">Contact me</a></li>
+          </ul>
+      </nav>
+  </header>
+    <section class="video-section ">
+      <h1 class="video-header">highlights</h1>
+      <figure>
+        <video src="images/tripvideo.mp4" controls></video>
+
+        <figcaption>
+          A trip in <i>naberzhini chelni, russia.</i> July.2023
+        </figcaption>
+      </figure>
     </section>
- <section class="visted">
-    <h2> my Travel history</h2>
-    <article class="ethiopia ">
-       
+    <section class="visted">
+      <h2 class="video-header">my Travel history</h2>
+      <article class="ethiopia">
         <h3>in my country Ethiopia</h3>
-        <div class="slider">
-            <figure class="myslide fade">
-                <figcaption class="txt">Tana,Bahrdar</figcaption>
-            
-            <img src="images/tana.jpg">
-        </figure>
-        
-        <figure class="myslide fade">
+        <div class="slider1">
+          <figure class="myslide1" id="slide1">
+            <figcaption class="txt">Tana,Bahrdar</figcaption>
+            <img src="images/tana.jpg" />
+          </figure>
+
+          <figure class="myslide1" id="slide2">
             <figcaption class="txt">Fasiledes,Gonder</figcaption>
-        
-        <img src="images/fasil.jpg">
-        </figure>
-            
-        <figure class="myslide fade">
+            <img src="images/fasil.jpg" />
+          </figure>
+
+          <figure class="myslide1" id="slide3">
             <figcaption class="txt">Gonder city</figcaption>
-        
-        <img src="images/gonder.jpg">
-        </figure>
-            
-        <figure class="myslide fade">
+            <img src="images/gonder.jpg" />
+          </figure>
+
+          <figure class="myslide1" id="slide4">
             <figcaption class="txt">Timket festival</figcaption>
-        
-        <img src="images/tmket.jpg">
-        </figure>
-            
-        <figure class="myslide fade">
+            <img src="images/tmket.jpg" />
+          </figure>
+
+          <figure class="myslide1" id="slide5">
             <figcaption class="txt">Entoto,Addis Ababa</figcaption>
-        
-        <img src="images/entoto.jpg">
-        </figure>
-            <a class="prev" >&#10094;</a>
-              <a class="next" >&#10095;</a>
-            
-            <div class="dotsbox" >
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot" ></span>
-                <span class="dot" ></span>
-                <span class="dot" ></span>
-            </div>
-        
+            <img src="images/entoto.jpg" />
+          </figure>
         </div>
-    </article>
-    <article class="forign">
-        <h3>forign cities </h3>
+        <div class="dotsbox">
+          <span class="dot" onclick="location.href='#slide1'"></span>
+          <span class="dot" onclick="location.href='#slide2'"></span>
+          <span class="dot" onclick="location.href='#slide3'"></span>
+          <span class="dot" onclick="location.href='#slide4'"></span>
+          <span class="dot" onclick="location.href='#slide5'"></span>
+        </div>
+      </article>
+      <article class="forign">
+        <h3>foreign cities</h3>
         <div class="slider">
-            <figure class="myslide fade">
-                <figcaption class="txt">naberzhini chelni,Russa</figcaption>
-            
-            <img src="images/chelni4.jpg">
-        </figure>
-        
-        <figure class="myslide fade">
-            <figcaption class="txt">Kazan,Russia</figcaption>
-        
-        <img src="images/chelni.jpg">
-        </figure>
-            
-        <figure class="myslide fade">
-            <figcaption class="txt"> kazan at night</figcaption>
-        
-        <img src="images/kazanatnight.jpg">
-        </figure>
-            
-        <figure class="myslide fade">
+          <figure class="myslide" id="slide8">
+            <figcaption class="txt">Chelni Kazan</figcaption>
+            <img src="images/chelni.jpg" />
+          </figure>
+
+          <figure class="myslide" id="slide9">
+            <figcaption class="txt">kazan at night</figcaption>
+            <img src="images/kazanatnight.jpg" />
+          </figure>
+
+          <figure class="myslide" id="slide10">
             <figcaption class="txt">karmel Mosque,Russia</figcaption>
-        
-        <img src="images/karmelmosque.jpg">
-        </figure>
-        <figure class="myslide fade">
+            <img src="images/karmelmosque.jpg" />
+          </figure>
+
+          <figure class="myslide" id="slide11">
             <figcaption class="txt">Bouman street,Kazan</figcaption>
-        
-        <img src="images/kazanbowmanstreet,jpg">
-        </figure>
-            
-        <figure class="myslide fade">
+            <img src="images/kazanbowmanstreet.jpg" />
+          </figure>
+
+          <figure class="myslide" id="slide12">
             <figcaption class="txt">syumbike tower,kazan</figcaption>
-        
-        <img src="images/7build.jpg">
-        </figure>
-        <figure class="myslide fade">
+            <img src="images/7build.jpg" />
+          </figure>
+
+          <figure class="myslide" id="slide13">
             <figcaption class="txt">Yelabuga,Russia</figcaption>
-        
-        <img src="images/yelabuga.jpg">
-        </figure>
-            
-        <figure class="myslide fade">
+            <img src="images/palace.jpg" />
+          </figure>
+          <figure class="myslide" id="slide14">
             <figcaption class="txt">Lenin Street,yelabuga</figcaption>
-        
-        <img src="images/yelabugastreet.jpg">
-        </figure>
+            <img src="images/yelabugastreet.jpg" />
+          </figure>
+        </div>
+        <div class="dotsboxx">
+          <span class="dott" onclick="location.href='#slide8'"></span>
+          <span class="dott" onclick="location.href='#slide9'"></span>
+          <span class="dott" onclick="location.href='#slide10'"></span>
+          <span class="dott" onclick="location.href='#slide11'"></span>
+          <span class="dott" onclick="location.href='#slide12'"></span>
+          <span class="dott" onclick="location.href='#slide13'"></span>
+          <span class="dott" onclick="location.href='#slide14'"></span>
         </div>
 
-    </article>
-
-
-
-
- </section>
-<section>
-    <h1>Plan to visit </h1>
-    <ul>
-        <li>in Ethiopia
-        <ul>
+      </article>
+    </section>
+    <section class="plan">
+      <h1 class="skills">Plan to visit</h1>
+      <ul>
+        <li>
+          in Ethiopia
+          <ul>
             <li>Dima Giorgis,Amhara region</li>
             <li>Siemen Mountain</li>
-            <li>Metu </li>
+            <li>Metu</li>
             <li>Harar</li>
             <li>Arbaminch</li>
-        </ul>
-</li>
-        <li>foreign
-        <ul>
+          </ul>
+        </li>
+        <li>
+          foreign
+          <ul>
             <li>Mombasa,Kenya</li>
             <li>Paris,france</li>
             <li>Asmara, Ertirea</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <aside class="sides">
+      <p>
+        let's explore the world together.if you have interst to join me ,let me know. 
+       
+      </p>
+    </aside>
 
-
-        </ul>
-</li>
-    
-    </ul>
-</section>
-<aside>
-    <p> if you want to explore the world with me, <a href="contactme">Contact me</a></p>
-
-</aside>
-
-
-
-    <footer>
-        <figure><a href="https://mail.google.com/mail/bisratmelak1@gmail.com"> <img id="gmail" src="images/gmail-logo.webp" alt="gmail"> bisratmelak1@gmail.com</a></figure>
-
-        <ul class="footerlist">
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="aboutme.html">About me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="Explorewithme.html">Explore with me</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="Education.html">Education</a></li>
-            <li><a href="contactme.html">Contact me</a></li>
-        </ul>
-           
-           
-          
-                <p id="p1">&copy; All rights reserved.</p>
-            <p id="p2">2023Gc  Bisrat portfolio.</p>
+    <footer class="footer">
+      <figure><a href="https://mail.google.com/mail/bisratmelak1@gmail.com"> <img class="footer__img" src="images/gmail.png" alt="gmail"> bisratmelak1@gmail.com</a></figure>
+      <ul class="footer__list">
+        <li class="footer__list-item"><a class="footer__link" href="Home.html">Home</a></li>
+        <li class="footer__list-item"><a class="footer__link" href="aboutme.html">About me</a></li>
+        <li class="footer__list-item"><a class="footer__link" href="skills.html">Skills</a></li>
+        <li class="footer__list-item"><a class="footer__link" href="Explorewithme.html">Explore with me</a></li>
+        <li class="footer__list-item"><a class="footer__link" href="hobbies.html">Hobbies</a></li>
+        <li class="footer__list-item"><a class="footer__link" href="Education.html">Education</a></li>
+        <li class="footer__list-item"><a class="footer__link" href="contactme.html">Contact me</a></li>
+      </ul>
+      <p class="footer__paragraph" id="p1">&copy; All rights reserved.</p>
+      <p class="footer__paragraph" id="p2">2023Gc  Bisrat portfolio.</p>
     </footer>
-    
-    
-</body>
+  </body>
 </html>

@@ -4,55 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        
-        <nav>
-                <a href="Home.html"> <img class="logo" src="images/orginallogo.png" alt="my logo"></a>
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="aboutme.html">About me</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="Education.html">Education</a></li>
-                    <li><a href="hobbies.html">Hobbies</a></li>
-                    <li><a href="Explorewithme.html">Explore with me</a></li>
-                    <li><a href="contactme.html">Contact me</a></li>
-                    </ul>
+    <header class="header">
+        <nav class="nav">
+            <a class="nav__logo" href="Home.html">
+                <img class="logo" src="images/orginallogo.png" alt="my logo">
+            </a>
+    
+            <label for="menu-toggle" class="nav__menu-icon">&#9776;</label>
+    
+            <ul class="nav__dropdown">
+                <li class="nav__item homes"><a href="Home.html">Home</a></li>
+                <li class="nav__item"><a href="aboutme.html">About me</a></li>
+                <li class="nav__item"><a href="skills.html">Skills</a></li>
+                <li class="nav__item"><a href="Education.html">Education</a></li>
+                <li class="nav__item"><a href="hobbies.html">Hobbies</a></li>
+                <li class="nav__item"><a href="Explorewithme.html">Explore with me</a></li>
+                <li class="nav__item"><a href="contactme.html">Contact me</a></li>
+            </ul>
         </nav>
     </header>
     <section class="about">
-        <h3>About Me</h3>
-        <img class="myimage" src="images/mypic.jpg" alt="mypic">
-        <div>
-            
-            <p class="par1"> I'm a <b>Full-Stack developer</b> based in Addis Ababa, Ethiopia. As a software engineering student at Addis Ababa University and a fellow in Women Techsters, I'm dedicated to enhancing my coding skills and creating imaginative applications and websites. I have a strong passion for innovation and a relentless drive to improve. Let's collaborate and build something remarkable together. <pre>location : </pre><address>5kilo.arada.Addis Ababa , Ethiopia,</address>
-              <a href="images/Resume.pdf" target="_blank" class="btn">Resume</a>
-
-
-
+        <h3 class="about__heading">About Me</h3>
+        <img class="about__image" src="images/front.jpg" alt="mypic">
+        <div class="par-center">
+          <p class="about__paragraph">
+            I'm a <b>Full-Stack developer</b> based in Addis Ababa, Ethiopia. As a software engineering student at Addis Ababa University and a fellow in Women Techsters, I'm dedicated to enhancing my coding skills and creating imaginative applications and websites. I have a strong passion for innovation and a relentless drive to improve. Let's collaborate and build something remarkable together.
+          </p>
+          <pre>location : </pre><address>5kilo.arada.Addis Ababa , Ethiopia,</address>
+          <a href="images/Resume.pdf" target="_blank" class="mybutton about__button">Resume</a>
         </div>
-    </section>
+      </section>
+      
 <hr>
-    <footer>
-        <figure><a href="https://mail.google.com/mail/bisratmelak1@gmail.com"> <img id="gmail" src="images/gmail-logo.webp" alt="gmail"> bisratmelak1@gmail.com</a></figure>
-
-        <ul class="footerlist">
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="aboutme.html">About me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="Explorewithme.html">Explore with me</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="Education.html">Education</a></li>
-            <li><a href="contactme.html">Contact me</a></li>
-        </ul>
-           
-           
-          
-                <p id="p1">&copy; All rights reserved.</p>
-            <p id="p2">2023Gc  Bisrat portfolio.</p>
-    </footer>
+<footer class="footer">
+    <figure><a href="https://mail.google.com/mail/bisratmelak1@gmail.com"> <img class="footer__img" src="images/gmail.png" alt="gmail"> bisratmelak1@gmail.com</a></figure>
+    <ul class="footer__list">
+      <li class="footer__list-item"><a class="footer__link" href="Home.html">Home</a></li>
+      <li class="footer__list-item"><a class="footer__link" href="aboutme.html">About me</a></li>
+      <li class="footer__list-item"><a class="footer__link" href="skills.html">Skills</a></li>
+      <li class="footer__list-item"><a class="footer__link" href="Explorewithme.html">Explore with me</a></li>
+      <li class="footer__list-item"><a class="footer__link" href="hobbies.html">Hobbies</a></li>
+      <li class="footer__list-item"><a class="footer__link" href="Education.html">Education</a></li>
+      <li class="footer__list-item"><a class="footer__link" href="contactme.html">Contact me</a></li>
+    </ul>
+    <p class="footer__paragraph" id="p1">&copy; All rights reserved.</p>
+    <p class="footer__paragraph" id="p2">2023Gc  Bisrat portfolio.</p>
+  </footer>
     
 </body>
 </html>
