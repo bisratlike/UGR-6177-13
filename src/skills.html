@@ -5,76 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    
 </head>
 <body>
-    <header>
-        
-        <nav>
-                <a href="Home.html"> <img class="logo" src="images/orginallogo.png" alt="my logo"></a>
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="aboutme.html">About me</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="Education.html">Education</a></li>
-                    <li><a href="hobbies.html">Hobbies</a></li>
-                    <li><a href="Explorewithme.html">Explore with me</a></li>
-                    <li><a href="contactme.html">Contact me</a></li>
-                </ul>
-            
-        </nav>
-    </header>
+    <header class="header is-mobile mb-4 pl-2 box">
+        <nav class="navbar pl-5" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand ">
+            <a class="navbar-item nav__logo" href="Home.html">
+              <img class="image " src="images/orginallogo.png" alt="my logo" >
+            </a>
+            <a role="button" class="navbar-burger burger is-hoverable" aria-label="menu" aria-expanded="false" data-target="navbarMenu" >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>   
+          
+            <div id="navbarMenu" class="navbar-menu is-hoverable">
+              <div class="navbar-end is-multiline">
+                <a class="navbar-item is-one-quarter" href="Home.html">Home</a>
+                <a class="navbar-item is-one-quarter" href="aboutme.html">About me</a>
+                <a class="navbar-item is-one-quarter" href="skills.html">skills</a>
+                <a class="navbar-item is-one-quarter" href="Education.html">Education</a>
+                <a class="navbar-item is-one-quarter" href="hobbies.html">Hobbies</a>
+                <a class="navbar-item is-one-quarter" href="Explorewithme.html">Explore with me</a>
+                <a class="navbar-item is-half" href="contactme.html">Contact me</a>
+                
+  
+              </div>
+             
+            </div>
+          </nav>
+                  
+      </header>
 
-    <h2>my Technical Skills</h2>
-    <table>
-        <tr>
-          <td><img src="images/python.jpeg" alt="Image 1"></td>
-          <td><img src="images/dsa.png" alt="Image 2"></td>
-          <td><img src="images/react.png" alt="Image 3"></td>
-          <td><img src="images/mongodb.jpeg" alt="Image 4"></td>
+    <h2 class="title is-4 p-5">my Technical Skills</h2>
+    <table >
+        <tr  >
+          <td ><img class="image is-128x128" src="images/python.jpeg" alt="Image 1"></td>
+          <td><img class="image is-128x128" src="images/dsa.png" alt="Image 2"></td>
+          <td><img class="image is-128x128" src="images/react.png" alt="Image 3"></td>
+          <td><img class="image is-128x128" src="images/mongodb.jpeg" alt="Image 4"></td>
         </tr>
-        <tr>
-          <td><img src="images/nodejs.png" alt="Image 5"></td>
-          <td><img src="images/sql.png" alt="Image 6"></td>
-          <td><img src="images/html.png" alt="Image 7"></td>
-          <td><img src="images/GitHub.png" alt="Image 8"></td>
+        <tr >
+          <td><img class="image is-128x128" src="images/nodejs.png" alt="Image 5"></td>
+          <td><img class="image is-128x128" src="images/sql.png" alt="Image 6"></td>
+          <td><img class="image is-128x128" src="images/html.png" alt="Image 7"></td>
+          <td><img class="image is-128x128" src="images/GitHub.png" alt="Image 8"></td>
         </tr>
       </table>
-    <h2>my Soft Skills</h2>
-    <!-- Communication skill , fast learner, determined, creative, dedicated,
-easily adoptive, attention to details, problem solving Skill -->
-   <ul class="softskill">
-    <li>Determined</li>
-    <li>Creative</li>
-    <li>Fast Learner</li>
-    <li>attention to details</li>
-    <li>easily adoptive</li>
-    <li>Communication skill </li>
-    <li>Leadership skill</li>
-    <li>fast learner</li>
-   </ul>
+    <h2 class="title is-4 p-5 mt-5">my Soft Skills</h2>
+   
+<ul class="softskill" width="200px">
+    <li class="notification is-light">Determined</li>
+    <li class="notification is-light">Creative</li>
+    <li class="notification is-light">Fast Learner</li>
+    <li class="notification is-light">Attention to Details</li>
+    <li class="notification is-light">Easily Adoptive</li>
+    <li class="notification is-light">Communication Skill</li>
+    <li class="notification is-light">Leadership Skill</li>
+    <li class="notification is-light">Fast Learner</li>
+</ul>
    <p> in addition to this i am certified in proffessional sales </p>
 
   <section class="projects">
-    <h2>some projects</h2>
+    <h2 class="title is-4">some projects</h2>
     <div class="pro">
-        <h3 class="proname">
+        <h3 class="title is-6 p-4">
             Apple clone
         </h3>
-        <p>the same with apple website.  i used Html, css and bootstrap to build it</p>
+        <p >the same with apple website.  i used Html, css and bootstrap to build it</p>
     </div>
     <div class="pro">
-        <h3 class="proname"> Slot Machine</h3>
+        <h3 class="title is-6 p-4"> Slot Machine</h3>
         <p>this one is simple gambling machine. i built it using javascript by nodejs . it doesn't have front-end part</p>
 
     </div>
     <div class="pro">
-        <h3 class="proname"> The Missing Piece</h3>
+        <h3 class="title is-6 p-4"> The Missing Piece</h3>
         <p> this one is a website for sharing puzzles. i built it with my hackathon teams, we used react for front-end and rubyonrails for back-end part.</a>
         </p>
 
     </div>
     <div class="pro">
-        <h3 class="proname"> Netflix clone</h3>
+        <h3 class="title is-6 p-4"> Netflix clone</h3>
         <p>i built a clone of netflix by using pure HTML and CSS</p>
 
     </div>
@@ -84,23 +100,58 @@ easily adoptive, attention to details, problem solving Skill -->
 
 <hr>
 
-    <footer>
-        <figure><a href="https://mail.google.com/mail/bisratmelak1@gmail.com"> <img id="gmail" src="images/gmail-logo.webp" alt="gmail"> bisratmelak1@gmail.com</a></figure>
-
-        <ul class="footerlist">
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="aboutme.html">About me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="Explorewithme.html">Explore with me</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="Education.html">Education</a></li>
-            <li><a href="contactme.html">Contact me</a></li>
-        </ul>
-           
-           
-          
-                <p id="p1">&copy; All rights reserved.</p>
-            <p id="p2">2023Gc  Bisrat portfolio.</p>
-    </footer>
+<footer class="container has-background-white-ter pl-4">
+    <div class="columns has-background-white-ter">
+        <div class="column is-desktop ">
+           <div class="columns">
+            <figure class="image is-64x64">
+                <a href="https://mail.google.com/mail/bisratmelak1@gmail.com">
+                    <img id="gmail" src="images/gmail.png" alt="gmail"> bisratmelak1@gmail.com
+                </a>
+            </figure>
+           </div>
+        </div>
+       
+        <div class="column is-8-desktop has-background-white-ter">
+            <div class="columns">
+                <ul class="column is-4-desktop">
+                    <li><a href="Home.html" class="has-text-black">Home</a></li>
+                    <li><a href="aboutme.html" class="has-text-black">About me</a></li>
+                    <li><a href="skills.html" class="has-text-black">Skills</a></li>
+                </ul>
+                <ul class="column is-4-desktop">
+                    <li><a href="Explorewithme.html" class="has-text-black">Explore with me</a></li>
+                    <li><a href="hobbies.html" class="has-text-black">Hobbies</a></li>
+                </ul>
+                <ul class="column is-4-desktop">
+                    <li><a href="Education.html" class="has-text-black">Education</a></li>
+                    <li><a href="contactme.html" class="has-text-black">Contact me</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+    </div>
+   <div class="columns has-background-white-ter">
+    <p id="p1" class="column">&copy; All rights reserved.</p>
+    <p id="p2" class="has-text-right column">2023Gc  Bisrat portfolio.</p>
+   </div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    
+      if ($navbarBurgers.length > 0) {
+        $navbarBurgers.forEach(function($el) {
+          $el.addEventListener('click', function() {
+            var target = $el.dataset.target;
+            var $target = document.getElementById(target);
+            $el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script> 
 </body>
 </html>

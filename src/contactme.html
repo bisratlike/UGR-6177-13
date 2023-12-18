@@ -1,72 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contactme</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+
 </head>
+
 <body>
-    <header>
-        
-        <nav>
-            
-                <a href="Home.html"> <img class="logo" src="images/orginallogo.png" alt="my logo"></a>
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="aboutme.html">About me</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="Education.html">Education</a></li>
-                    <li><a href="hobbies.html">Hobbies</a></li>
-                    <li><a href="Explorewithme.html">Explore with me</a></li>
-                    <li><a href="contactme.html">Contact me</a></li>
-                    
-            </ul>
-        </nav>
-    </header>
-
-<div class="container">
-            <figure>   
-            <a href="https://github.com/bisratlike"><img src="images/GitHub.png" alt="github">contact me on GitHub</a>
-                   </figure>
-                   <figure>
-            <a href="https://leetcode.com/bisratlike/"><img src="images/leetcode.png" alt="leetcode"> check my Leetcode</a>
-                   </figure>
-                   <figure>
-            <a href="https://www.linkedin.com/in/bisrat-melak/"><img src="images/LinkedIn_logo_initials.png.webp" alt="linkedin"> Let's connect on linkedin</a>
-                   </figure>
-                   <figure>
-            <a href="https://t.me/befiyona"><img src="images/Telegram_logo.svg.webp" alt="telegram">contact me on Telegram</a>
-                   </figure>
-                   <figure>
-            <a href="https://instagram.com/ethio_lifey?igshid=YzAwZjE1ZTI0Zg=="><img src="images/Instagram.webp" alt="Instagram">follow me on instagram</a>
-                   </figure>
-        </div>
-        <form action="get">
-            <label for="message">Send message</label>
-             <textArea id="message" ></textArea>
-            <button >Send</button>
-        </form>
-        
-
-
-
-    <footer>
-        <figure><a href="https://mail.google.com/mail/bisratmelak1@gmail.com"> <img id="gmail" src="images/gmail-logo.webp" alt="gmail"> bisratmelak1@gmail.com</a></figure>
-
-        <ul class="footerlist">
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="aboutme.html">About me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="Explorewithme.html">Explore with me</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="Education.html">Education</a></li>
-            <li><a href="contactme.html">Contact me</a></li>
-        </ul>
-           
-           
+    <header class="header is-mobile mb-4 pl-2 box">
+        <nav class="navbar pl-5" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand ">
+            <a class="navbar-item nav__logo" href="Home.html">
+              <img class="image " src="images/orginallogo.png" alt="my logo" >
+            </a>
+            <a role="button" class="navbar-burger burger is-hoverable" aria-label="menu" aria-expanded="false" data-target="navbarMenu" >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>   
           
-                <p id="p1">&copy; All rights reserved.</p>
-            <p id="p2">2023Gc  Bisrat portfolio.</p>
-    </footer> 
+            <div id="navbarMenu" class="navbar-menu is-hoverable">
+              <div class="navbar-end is-multiline">
+                <a class="navbar-item is-one-quarter" href="home.html">Home</a>
+                <a class="navbar-item is-one-quarter" href="aboutme.html">About me</a>
+                <a class="navbar-item is-one-quarter" href="skills.html">skills</a>
+                <a class="navbar-item is-one-quarter" href="Education.html">Education</a>
+                <a class="navbar-item is-one-quarter" href="hobbies.html">Hobbies</a>
+                <a class="navbar-item is-one-quarter" href="Explorewithme.html">Explore with me</a>
+                <a class="navbar-item is-half" href="contactme.html">Contact me</a>
+                
+  
+              </div>
+             
+            </div>
+          </nav>
+                  
+      </header>
+
+    <div class="container">
+        <section class="section">
+
+            <div class="container">
+
+                <div class="columns is-centered">
+
+                    <div class="column is-one-quarter">
+
+                        <figure class="image is-64x64">
+
+                            <a href="https://github.com/bisratlike">
+
+                                <img src="images/GitHub.png" alt="github">
+
+                            </a>
+
+                        </figure>
+
+                        <h6 class="subtitle is-6">follow me on GitHub</h6>
+
+
+                        <figure class="image is-64x64">
+
+                            <a href="https://leetcode.com/bisratlike/">
+
+                                <img src="images/leetcode.png" alt="leetcode">
+
+                            </a>
+
+                        </figure>
+
+                        <h6 class="subtitle is-6">check my Leetcode</h6>
+
+
+                        <figure class="image is-64x64">
+
+                            <a href="https://www.linkedin.com/in/bisrat-melak/">
+
+                                <img src="images/linkedin.png" alt="linkedin">
+
+                            </a>
+
+                        </figure>
+
+                        <h6 class="subtitle is-6">Let's connect on LinkedIn</h6>
+
+
+                        <figure class="image is-64x64">
+
+                            <a href="https://t.me/befiyona">
+
+                                <img src="images/telegram.jpeg" alt="telegram">
+
+                            </a>
+
+                        </figure>
+
+                        <h6 class="subtitle is-6">contact me on Telegram</h6>
+
+
+                        <figure class="image is-64x64">
+
+                            <a href="https://instagram.com/ethio_lifey?igshid=YzAwZjE1ZTI0Zg==">
+
+                                <img src="images/instagram.jpeg" alt="Instagram">
+
+                            </a>
+
+                        </figure>
+
+                        <h6 class="subtitle is-6 pl-5 ">contact me on Instagram</h6>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <div class="p-5">
+            <form action="get" class="myform"> <label for="message" class="label">Send message</label> <textarea
+                    id="message" class="textarea" placeholder="write your message here"></textarea> <button
+                    class="button is-primary ">Send</button> </form>
+        </div>
+
+        <hr>
+
+
+        <footer class="container has-background-white-ter pl-4">
+            <div class="columns has-background-white-ter">
+                <div class="column is-desktop ">
+                   <div class="columns">
+                    <figure class="image is-64x64">
+                        <a href="https://mail.google.com/mail/bisratmelak1@gmail.com">
+                            <img id="gmail" src="images/gmail.png" alt="gmail"> bisratmelak1@gmail.com
+                        </a>
+                    </figure>
+                   </div>
+                </div>
+               
+                <div class="column is-8-desktop has-background-white-ter">
+                    <div class="columns">
+                        <ul class="column is-4-desktop">
+                            <li><a href="Home.html" class="has-text-black">Home</a></li>
+                            <li><a href="aboutme.html" class="has-text-black">About me</a></li>
+                            <li><a href="skills.html" class="has-text-black">Skills</a></li>
+                        </ul>
+                        <ul class="column is-4-desktop">
+                            <li><a href="Explorewithme.html" class="has-text-black">Explore with me</a></li>
+                            <li><a href="hobbies.html" class="has-text-black">Hobbies</a></li>
+                        </ul>
+                        <ul class="column is-4-desktop">
+                            <li><a href="Education.html" class="has-text-black">Education</a></li>
+                            <li><a href="contactme.html" class="has-text-black">Contact me</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+           <div class="columns has-background-white-ter">
+            <p id="p1" class="column">&copy; All rights reserved.</p>
+            <p id="p2" class="has-text-right column">2023Gc  Bisrat portfolio.</p>
+           </div>
+        </footer>
+        <script>
+            const form = document.querySelector('form');
+            const messageInput = document.getElementById('message');
+
+            form.addEventListener('submit', async (event) => {
+                event.preventDefault();
+
+                const message = messageInput.value;
+
+                if (!message) {
+
+                    return;
+                }
+
+                const emailUrl = `mailto:bisratmelak1@gmail.com?subject=${encodeURIComponent('New message')}&body=${encodeURIComponent(message)}`;
+
+                try {
+                    await window.open(emailUrl);
+
+                } catch (error) {
+                    alert('Error sending message. Please make sure your device can send emails.');
+                }
+            });
+            
+                document.addEventListener('DOMContentLoaded', function() {
+                  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+                
+                  if ($navbarBurgers.length > 0) {
+                    $navbarBurgers.forEach(function($el) {
+                      $el.addEventListener('click', function() {
+                        var target = $el.dataset.target;
+                        var $target = document.getElementById(target);
+                        $el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                      });
+                    });
+                  }
+                });
+               
+        </script>
 </body>
+
 </html>
