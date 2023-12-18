@@ -66,12 +66,16 @@
             <img src="images/entoto.jpg" />
           </figure>
         </div>
+        <div class="buttons">
+          <span class="next">&#10095;</span>
+          <span class="prev">&#10094;</span>
+        </div>
         <div class="dotsbox">
-          <span class="dot" onclick="location.href='#slide1'"></span>
-          <span class="dot" onclick="location.href='#slide2'"></span>
-          <span class="dot" onclick="location.href='#slide3'"></span>
-          <span class="dot" onclick="location.href='#slide4'"></span>
-          <span class="dot" onclick="location.href='#slide5'"></span>
+          <span class="dot active"  attr="0" onclick="switchImage(this)" ></span>
+          <span class="dot" attr="1" onclick="switchImage(this)"></span>
+          <span class="dot" attr="2" onclick="switchImage(this)"></span>
+          <span class="dot" attr="3" onclick="switchImage(this)"></span>
+          <span class="dot" attr="4" onclick="switchImage(this)"></span>
         </div>
       </article>
       <article class="forign">
@@ -111,14 +115,16 @@
             <img src="images/yelabugastreet.jpg" />
           </figure>
         </div>
+        <div class="buttons">
+          <span class="nexts2">&#10095;</span>
+          <span class="prevs2">&#10094;</span>
+        </div>
         <div class="dotsboxx">
-          <span class="dott" onclick="location.href='#slide8'"></span>
-          <span class="dott" onclick="location.href='#slide9'"></span>
-          <span class="dott" onclick="location.href='#slide10'"></span>
-          <span class="dott" onclick="location.href='#slide11'"></span>
-          <span class="dott" onclick="location.href='#slide12'"></span>
-          <span class="dott" onclick="location.href='#slide13'"></span>
-          <span class="dott" onclick="location.href='#slide14'"></span>
+          <span class="dott active2"  attr="0" onclick="switchImage2(this)" ></span>
+          <span class="dott" attr="1" onclick="switchImage2(this)"></span>
+          <span class="dott" attr="2" onclick="switchImage2(this)"></span>
+          <span class="dott" attr="3" onclick="switchImage2(this)"></span>
+          <span class="dott" attr="4" onclick="switchImage2(this)"></span>
         </div>
 
       </article>
@@ -167,5 +173,6 @@
       <p class="footer__paragraph" id="p1">&copy; All rights reserved.</p>
       <p class="footer__paragraph" id="p2">2023Gc  Bisrat portfolio.</p>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>

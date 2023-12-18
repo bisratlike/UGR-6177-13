@@ -365,64 +365,200 @@ figure {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0 20px;
 }
-.prev,
-.next,
-.prevv,
-.nextt {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 18px;
-  padding: 10px 20px;
-  color: rgb(73, 47, 47);
-  text-decoration: none;
-  cursor: pointer;
-}
-.next {
-  right: 0;
-}
-.prev {
-  left: 0;
-}
-.dotsbox,
-.dotsboxx {
-  position: relative;
-  width: auto;
-  /* text-align: center; */
-}
 
-.dot,
-.dott {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: #0e0e0e;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-}
-.dott:hover,
-.dot:hover {
-  background-color: #d58e8e;
-}
-.slider,
-.slider1 {
+.ethiopia , .forign{
   position: relative;
-  width: 100%;
-  height: 20rem;
+  width: 25rem;
+  height: 350px;
+  border: 3px solid #ede6d6;
+  box-shadow: 0 0 8px 2px rgba(0,0,0,0.2);
+}
+.ethiopia .slider1,.forign .slider{
+  width: 80%;
+  height: calc(100% - 40px);
+  position: relative;
   overflow: hidden;
 }
-.myslide:target {
-  opacity: 1;
+.ethiopia .slider1 img,.forign .slider img {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  object-fit: cover;
+  align-self: center;
+  
 }
-.myslide1:target {
-  opacity: 1;
+.ethiopia .slider1 img:not(.active), .forign .slider img:not(.active2) {
+  top: 0;
+  left: -100%;
 }
-.myslide img,
-.myslide1 img {
-  height: auto;
-  width: 25rem;
+
+
+span.next, span.prev, span.nexts2, span.prevs2{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 14px;
+  color: #a7adac;
+  font-size: 24px;
+  font-weight: bold;
+  transition: 0.5s;
+  border-radius: 3px;
+  user-select: none;
+  cursor: pointer;
+  z-index: 3;
 }
+span.next,span.nexts2{
+  right: 20px;
+}
+span.prev,span.prevs2{
+  left: 20px;
+}
+span.next:hover, span.prev:hover,span.nexts2:hover, span.prevs2:hover {
+  background-color: #ede6d6;
+  opacity: 0.8;
+  color: #222;
+} 
+.dotsbox , .dotsboxx{
+  position: absolute;
+  bottom: 5px;
+  z-index: 3;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dotsbox .dotsboxx{
+  width: 15px;
+  height: 15px;
+  margin: 0px 2px;
+  border: 3px solid #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+.dotsbox .active,.dotsboxx.active2 {
+  background-color: #555;
+}
+.ethiopia .slider1 .txt, .forign .slider .txt {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(50%, -50%);
+  color: #181717;
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: center;
+  z-index: 0;
+  opacity: 0;
+}
+
+
+ @keyframes next1 {
+  from {
+    left: 0;
+    opacity: 1;
+    z-index: 2;
+  }
+  to {
+    left: -100%;
+    opacity: 0;
+    z-index: 1;
+  }
+}
+
+@keyframes next2 {
+  from {
+    left: 100%;
+    opacity: 0;
+    z-index: 1;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+@keyframes prev1 {
+  from {
+    left: 0;
+    opacity: 1;
+    z-index: 2;
+  }
+  to {
+    left: 100%;
+    opacity: 0;
+    z-index: 1;
+  }
+}
+
+@keyframes prev2 {
+  from {
+    left: -100%;
+    opacity: 0;
+    z-index: 1;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+    z-index: 2;
+  }
+} 
+
+
+@keyframes next21 {
+  from {
+    left: 0;
+    opacity: 1;
+    z-index: 2;
+  }
+  to {
+    left: -100%;
+    opacity: 0;
+    z-index: 1;
+  }
+}
+
+@keyframes next22 {
+  from {
+    left: 100%;
+    opacity: 0;
+    z-index: 1;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+@keyframes prev21{
+  from {
+    left: 0;
+    opacity: 1;
+    z-index: 2;
+  }
+  to {
+    left: 100%;
+    opacity: 0;
+    z-index: 1;
+  }
+}
+
+@keyframes prev22 {
+  from {
+    left: -100%;
+    opacity: 0;
+    z-index: 1;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+    z-index: 2;
+  }
+} 
+
+
+ 
 
 .plan ul {
   display: grid;
