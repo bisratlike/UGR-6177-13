@@ -1,82 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  
-</head>
-<body>
-    <header>
-        
-        <nav>
-                <a href="Home.html"> <img class="logo" src="images/orginallogo.png" alt="my logo"></a>
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="aboutme.html">About me</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="Education.html">Education</a></li>
-                    <li><a href="hobbies.html">Hobbies</a></li>
-                    <li><a href="Explorewithme.html">Explore with me</a></li>
-                    <li><a href="contactme.html">Contact me</a></li>
-                </ul>
-            
-        </nav>
-    </header>
-    <section class="intro">
-        <h1>My Hobbies</h1>
-        <article class="poetry">
-            <h3>The Captivating World of Poetry</h3>
-        <p> I am captivated by the mesmerizing art of poetry—both as a creator and a listener. i also enjoy participating in poem nights. from one of my favourite poets <strong>Laureate Tsegaye Gebremedhin </strong>known for his poet book <q>እሳት ወይ አበባ</q> i invite you to listen <q>"ፈራን"</q> masterpiece.</p>
-        <div class="audio-wrapper">
-            <img  src="images/tsegaye.jpeg" alt="getami pic">
-            <audio class="poemaudio" src="images/_ፈራን_በክቡር_ሎሬት_ፀጋዬ_ገብረመድህን_Feran_a_poem_by_Laureate_Tseg_AbO0QvD.mp3" controls> </audio>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="bg-white shadow-md p-4 text-lg">
+      <nav class="flex md:w-full md:justify-between">
+        <a href="Home.html">
+          <img
+            class="w-12 h-12 md:h-14 mr-10"
+            src="images/orginallogo.png"
+            alt="my logo"
+          />
+        </a>
+
+        <div x-data="{ isHovered: false }" class="md:hidden relative group">
+          <button
+            @mouseenter="isHovered = true"
+            @mouseleave="isHovered = false"
+            class="bg-emerald-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex text-right w-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              dataSlot="icon"
+              class="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+
+          <ul
+            x-show="isHovered"
+            @mouseenter="isHovered = true"
+            @mouseleave="isHovered = false"
+            class="dropdown-menu relative text-gray-700 pt-1 md:flex md:space-x-4 md:order-3 object-right items-right "
+          >
+            <li>
+              <a
+                class="rounded-t bg-gray-200 hover:bg-emerald-300 py-2 px-4 block whitespace-no-wrap"
+                href="Home.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="bg-gray-200 hover:bg-emerald-300 py-2 px-4 block whitespace-no-wrap"
+                href="aboutme.html"
+                >About me</a
+              >
+            </li>
+            <li>
+              <a
+                class="bg-gray-200 hover:bg-emerald-300 py-2 px-4 block whitespace-no-wrap"
+                href="skills.html"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a
+                class="bg-gray-200 hover:bg-emerald-300 py-2 px-4 block whitespace-no-wrap"
+                href="Education.html"
+                >Education</a
+              >
+            </li>
+            <li>
+              <a
+                class="bg-gray-200 hover:bg-emerald-300 py-2 px-4 block whitespace-no-wrap"
+                href="hobbies.html"
+                >Hobbies</a
+              >
+            </li>
+            <li>
+              <a
+                class="bg-gray-200 hover:bg-emerald-300 py-2 px-4 block whitespace-no-wrap"
+                href="Explorewithme.html"
+                >Explore with me</a
+              >
+            </li>
+            <li>
+              <a
+                class="rounded-b bg-gray-200 hover:bg-emerald-300 py-2 px-4 block whitespace-no-wrap"
+                href="contactme.html"
+                >Contact me</a
+              >
+            </li>
+          </ul>
         </div>
-    </article>
-        <article class="books">
-            <h3>Expanding Horizons Through the Written Word</h3>
-            <p>Immersing myself in the vast ocean of literature, I find immense joy in exploring diverse genres of books. This cherished hobby of mine not only provides endless entertainment but also expands the horizons of my thinking. Each book I encounter becomes a gateway to new perspectives, ideas, and worlds, allowing my mind to stretch and wander in delightful directions </p>
 
-        </article>
-        <article class="volunteer">
-            <h3>Empowering Change Through Volunteer Activities</h3>
+        <div class="hidden md:flex space-x-4 md:space-x-8 ">
+          <a class="hover:text-gray-700 hover:bg-emerald-300" href="Home.html">Home</a>
+          <a class="hover:text-gray-700 hover:bg-emerald-300" href="aboutme.html">About me</a>
+          <a class="hover:text-gray-700 hover:bg-emerald-300" href="skills.html">Skills</a>
+          <a class="hover:text-gray-700 hover:bg-emerald-300" href="Education.html">Education</a>
+          <a class="hover:text-gray-700 hover:bg-emerald-300" href="hobbies.html">Hobbies</a>
+          <a class="hover:text-gray-700 hover:bg-emerald-300" href="Explorewithme.html"
+            >Explore with me</a
+          >
+          <a class="hover:text-gray-700 hover:bg-emerald-300" href="contactme.html">Contact me</a>
+        </div>
+      </nav>
+    </header>
 
-            <p>Engaging in meaningful volunteer activities is an essential part of my life, allowing me to give back to society and experience a profound sense of purpose. Participating in diverse volunteer initiatives not only ignites my passion but also empowers me to create positive change in the world. Through these endeavors, I have had the privilege of acquiring certifications that validate my contributions.</p>
-            <img src="images/volenteer.png" alt="volenteer">
-            <img src="images/volunt.jpg" alt="volenteer2">
-
-
-
-        </article>
-        <article class="hike">
-            <h3>Hiking and traveling</h3>
-            <p>Traveling is not just a hobby for me; it is a passion that fuels my desire to explore the world to its fullest extent. I am driven to immerse myself in diverse cultures, breathtaking landscapes, and extraordinary experiences. With an insatiable wanderlust, I seek to venture far and wide, embracing the wonders that our planet has to offer. click the link below.</p>
-            <a class="mybutton" href="Explorewithme.html">my travel History</a>
-        </article>
-
-
-
+    <section class="intro px-20">
+      <h1 class="text-2xl font-bold p-10 text-center">My Hobbies</h1>
+      <article class="poetry">
+        <h3 class="text-lg font-bold">The Captivating World of Poetry</h3>
+        <p class="text-justify">
+          I am captivated by the mesmerizing art of poetry—both as a creator and
+          a listener. I also enjoy participating in poem nights. From one of my
+          favorite poets <strong>Laureate Tsegaye Gebremedhin</strong>, known
+          for his poet book <q>እሳት ወይ አበባ</q>, I invite you to listen to the
+          masterpiece <q>"ፈራን"</q>.
+        </p>
+        <div class="audio-wrapper">
+          <img src="images/tsegaye.jpeg" alt="getami pic" />
+          <audio
+            class="poemaudio"
+            src="images/_ፈራን_በክቡር_ሎሬት_ፀጋዬ_ገብረመድህን_Feran_a_poem_by_Laureate_Tseg_AbO0QvD.mp3"
+            controls
+          ></audio>
+        </div>
+      </article>
+      <article class="books">
+        <h3 class="text-xl font-bold p-5">
+          Expanding Horizons Through the Written Word
+        </h3>
+        <p class="text-justify">
+          Immersing myself in the vast ocean of literature, I find immense joy
+          in exploring diverse genres of books. This cherished hobby of mine not
+          only provides endless entertainment but also expands the horizons of
+          my thinking. Each book I encounter becomes a gateway to new
+          perspectives, ideas, and worlds, allowing my mind to stretch and
+          wander in delightful directions.
+        </p>
+      </article>
+      <article class="volunteer">
+        <h3 class="text-xl font-bold p-5">
+          Empowering Change Through Volunteer Activities
+        </h3>
+        <p class="text-justify">
+          Engaging in meaningful volunteer activities is an essential part of my
+          life, allowing me to give back to society and experience a profound
+          sense of purpose. Participating in diverse volunteer initiatives not
+          only ignites my passion but also empowers me to create positive change
+          in the world. Through these endeavors, I have had the privilege of
+          acquiring certifications that validate my contributions.
+        </p>
+        <div class="grid grid-cols-2 gap-4 p-10" >
+          <img class="image w-2/3" src="images/volenteer.png" alt="volenteer" />
+          <img class="image w-2/3" src="images/volunt.jpg" alt="volenteer2" />
+        </div>
+      </article>
+      <article class="hike">
+        <h3 class="text-xl font-bold p-5">Hiking and Traveling</h3>
+        <p class="text-justify m-10">
+          Traveling is not just a hobby for me; it is a passion that fuels my
+          desire to explore the world to its fullest extent. I am driven to
+          immerse myself in diverse cultures, breathtaking landscapes, and
+          extraordinary experiences. With an insatiable wanderlust, I seek to
+          venture far and wide, embracing the wonders that our planet has to
+          offer. Click the link below.
+        </p>
+        <a
+          class="bg-emerald-200 text-black font-bold py-2 px-4 m-10 rounded"
+          href="Explorewithme.html"
+          >My Travel History</a
+        >
+      </article>
     </section>
-    <hr>
+    <hr />
 
-    <footer>
-        <figure><a href="https://mail.google.com/mail/bisratmelak1@gmail.com"> <img id="gmail" src="images/gmail-logo.webp" alt="gmail"> bisratmelak1@gmail.com</a></figure>
+    <footer class="container bg-emerald-100 w-full mb-1  mt-10">
+      <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+        <div class="mb-4 md:mb-0 md:mr-8">
+          <a
+            href="https://mail.google.com/mail/bisratmelak1@gmail.com"
+            class="flex items-center text-black"
+          >
+            <img
+              id="gmail"
+              class="w-12 h-12 mr-2"
+              src="images/gmail.png"
+              alt="gmail"
+            />
+            bisratmelak1@gmail.com
+          </a>
+        </div>
 
-        <ul class="footerlist">
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="aboutme.html">About me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="Explorewithme.html">Explore with me</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="Education.html">Education</a></li>
-            <li><a href="contactme.html">Contact me</a></li>
-        </ul>
-           
-           
-          
-                <p id="p1">&copy; All rights reserved.</p>
-            <p id="p2">2023Gc  Bisrat portfolio.</p>
+        <div class="flex flex-col md:flex-row">
+          <ul class="mb-4 md:mb-0 md:mr-8">
+            <li><a href="Home.html" class="text-black">Home</a></li>
+            <li><a href="aboutme.html" class="text-black">About me</a></li>
+            <li><a href="skills.html" class="text-black">Skills</a></li>
+          </ul>
+          <ul class="mb-4 md:mb-0 md:mr-8">
+            <li>
+              <a href="Explorewithme.html" class="text-black"
+                >Explore with me</a
+              >
+            </li>
+            <li><a href="hobbies.html" class="text-black">Hobbies</a></li>
+          </ul>
+          <ul>
+            <li><a href="Education.html" class="text-black">Education</a></li>
+            <li><a href="contactme.html" class="text-black">Contact me</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p id="p1" class="text-black mb-4 md:mb-0">
+          &copy; All rights reserved.
+        </p>
+        <p id="p2" class="text-black">2023Gc Bisrat portfolio.</p>
+      </div>
     </footer>
-    
-</body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const dropdownButton = document.querySelector(".group button");
+        const dropdownMenu = document.querySelector(".dropdown-menu");
+
+        dropdownButton.addEventListener("mouseenter", function () {
+          dropdownMenu.style.display = "block";
+        });
+
+        dropdownButton.addEventListener("mouseleave", function () {
+          dropdownMenu.style.display = "none";
+        });
+
+        dropdownMenu.addEventListener("mouseenter", function () {
+          dropdownMenu.style.display = "block";
+        });
+
+        dropdownMenu.addEventListener("mouseleave", function () {
+          dropdownMenu.style.display = "none";
+        });
+      });
+    </script>
+  </body>
 </html>

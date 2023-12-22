@@ -1,111 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Education</title>
-</head>
-<body>
-    <header>
-        
-        <nav>
-                <a href="Home.html"> <img class="logo" src="images/orginallogo.png" alt="my logo"></a>
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="aboutme.html">About me</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="Education.html">Education</a></li>
-                    <li><a href="hobbies.html">Hobbies</a></li>
-                    <li><a href="Explorewithme.html">Explore with me</a></li>
-                    <li><a href="contactme.html">Contact me</a></li>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+     <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+      <header class="bg-white shadow-md p-4">
+        <nav class="flex md:w-full md:justify-between">
+            <a href="Home.html">
+                <img class="w-12 h-12 md:h-14 mr-10" src="images/orginallogo.png" alt="my logo">
+            </a>
+    
+            <div x-data="{ isHovered: false }" class="md:hidden relative group">
+                <button @mouseenter="isHovered = true" @mouseleave="isHovered = false"
+                        class="bg-emerald-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex text-right w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" dataSlot="icon" class="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                    </svg>
+                </button>
+    
+                <ul x-show="isHovered" @mouseenter="isHovered = true" @mouseleave="isHovered = false"
+                    class="dropdown-menu relative text-gray-700 pt-1 md:flex md:space-x-4 md:order-3 object-right items-right">
+                    <li><a class="rounded-t bg-gray-200 hover:bg-emerald-300 py-2 px-4 block whitespace-no-wrap"
+                           href="Home.html">Home</a></li>
+                    <li><a class="bg-gray-200 hover:bg-emerald-300 py-2 px-4 block whitespace-no-wrap"
+                           href="aboutme.html">About me</a></li>
+                    <li><a class="bg-gray-200 hover:bg-emerald-300 py-2 px-4 block whitespace-no-wrap"
+                           href="skills.html">Skills</a></li>
+                    <li><a class="bg-gray-200 hover:bg-emerald-300 py-2 px-4 block whitespace-no-wrap"
+                           href="Education.html">Education</a></li>
+                    <li><a class="bg-gray-200 hover:bg-emerald-300 py-2 px-4 block whitespace-no-wrap"
+                           href="hobbies.html">Hobbies</a></li>
+                    <li><a class="bg-gray-200 hover:bg-emerald-300 py-2 px-4 block whitespace-no-wrap"
+                           href="Explorewithme.html">Explore with me</a></li>
+                    <li><a class="rounded-b bg-gray-200 hover:bg-emerald-300 py-2 px-4 block whitespace-no-wrap"
+                           href="contactme.html">Contact me</a></li>
                 </ul>
-            
+            </div>
+    
+            <div class="hidden md:flex space-x-4 md:space-x-8 ">
+                <a class="hover:text-gray-700 hover:bg-emerald-300" href="Home.html">Home</a>
+                <a class="hover:text-gray-700 hover:bg-emerald-300" href="aboutme.html">About me</a>
+                <a class="hover:text-gray-700 hover:bg-emerald-300" href="skills.html">Skills</a>
+                <a class="hover:text-gray-700 hover:bg-emerald-300" href="Education.html">Education</a>
+                <a class="hover:text-gray-700 hover:bg-emerald-300" href="hobbies.html">Hobbies</a>
+                <a class="hover:text-gray-700 hover:bg-emerald-300" href="Explorewithme.html"
+                  >Explore with me</a
+                >
+                <a class="hover:text-gray-700 hover:bg-emerald-300" href="contactme.html">Contact me</a>
+              </div>
         </nav>
     </header>
-    <h1>My Education</h1>
-    <section class=" higher">
-         <div class="schoolwrap">
-        <h3 class="schoolname">Addis ababa university  - software engineering</h3>
-        <h5 class="dates"> 2021- present    Addis Ababa,Ethiopia. </h5>
-        <p class="schoolpar"> I am a 3rd year Software engineering Student at Addis Ababa university. </p>
-        </div>
-        <div class="schoolwrap">
-            <h3 class="schoolname">Negelle Highschool/Diploma</h3>
-            <h5 class="dates">2017- june 2021.    Negelle borena,Ethiopia. </h5>
-            <p class="schoolpar"> Secondary and preparatory School</p>
-            </div>
-
+    <h1 class="text-xl font-bold p-4 text-center">My Education</h1>
+    <section class="p-6">
+      <div>
+        <h3 class="text-lg font-bold">
+          Addis ababa university - software engineering
+        </h3>
+        <h5 class="pb-4">2021 - present, Addis Ababa, Ethiopia</h5>
+        <p>
+          I am a 3rd year Software Engineering Student at Addis Ababa
+          University.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold pt-5">Negelle Highschool/Diploma</h3>
+        <h5 class="pb-4">2017 - June 2021, Negelle Borena, Ethiopia</h5>
+        <p>Secondary and preparatory School</p>
+      </div>
     </section>
-    <hr>
-    <section class="trainings">
-        <h2>Short trainings  and Experiences</h2>
-        <div class="schoolwrap">
-            <h3 class="schoolname">WWC HACKATHON for Social good 2023</h3>
-            <h5 class="dates">October 2023  Remote</h5>
-            <p class="schoolpar"> Our team was an international team from the USA ,Colombia ,
-                Chilli and me from Africa ,Ethiopia . We build a website that helps
-                elders to connect each other with the common interest puzzle(Missing piece) . here's the link : <a href="https://github.com/WWC-Hackathon-2023/missing_piece_api">missingpiece</a> </p>
-            
-            </div>
-
-        <div class="schoolwrap">
-            <h3 class="schoolname">Women Techsters - Software development</h3>
-            <h5 class="dates">from 2021- present.   Remote</h5>
-            <p class="schoolpar">  </p>
-            
-            </div>
-
-            <div class="schoolwrap">
-                <h3 class="schoolname">Alabuga Polytech - industrial programming</h3>
-                <h5 class="dates">january 2023- july 2023   Elabuga,Russia</h5>
-                <p class="schoolpar"> I Learned Siemens Tia Portal · SCL · Analytical Skills · Persistence ·
-                    Electrical Troubleshooting · Attention to Detail and also Basic Russian Language </p>
-                    <img src="images/alabuga.jpg" alt="alabuga">
-                </div>
-
-                <div class="schoolwrap">
-                    <h3 class="schoolname">Techdev with Cisco - Cyber security </h3>
-                    <h5 class="dates">june 2023- semptember 2023.   Remote</h5>
-                    <p class="schoolpar"> i learned fundamental of cybersecurity , cyber security essentials , cloud security, security management courses. </p>
-                    <img src="images/cyber.jpg" alt="cyber">
-                </div>
-                <div class="projects">
-                    <h4>other projects :-</h4>
-                    <ul>
-                        <li>apple clone</li>
-                        <li>Netflix clone</li>
-                        <li>Slot machine</li>
-                    </ul>
-
-                </div>
-                
-                
-            
-            
-
- 
-    </section>
-    <hr>
-    <footer>
-        <figure><a href="https://mail.google.com/mail/bisratmelak1@gmail.com"> <img id="gmail" src="images/gmail-logo.webp" alt="gmail"> bisratmelak1@gmail.com</a></figure>
-
-        <ul class="footerlist">
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="aboutme.html">About me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="Explorewithme.html">Explore with me</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="Education.html">Education</a></li>
-            <li><a href="contactme.html">Contact me</a></li>
+    <hr class="my-8" />
+    <section class="trainings p-6">
+      <h2 class="text-xl font-bold p-8">Short trainings and Experiences</h2>
+      <div>
+        <h3 class="text-lg font-bold">WWC HACKATHON for Social good 2023</h3>
+        <h5 class="pb-4">October 2023, Remote</h5>
+        <p>
+          Our team was an international team from the USA, Colombia, Chile, and
+          me from Africa, Ethiopia. We built a website that helps elders connect
+          with each other through the common interest puzzle (Missing Piece).
+          Here's the link:
+          <a href="https://github.com/WWC-Hackathon-2023/missing_piece_api"
+            >missingpiece</a
+          >
+        </p>
+      </div>
+      <hr class="my-8" />
+      <div class="schoolwrap">
+        <h3 class="text-lg font-bold">
+          Women Techsters - Software development
+        </h3>
+        <h5 class="pb-4">2021 - present, Remote</h5>
+      </div>
+      <hr class="my-8" />
+      <div class="schoolwrap">
+        <h3 class="text-lg font-bold">
+          Alabuga Polytech - industrial programming
+        </h3>
+        <h5 class="pb-4">January 2023 - July 2023, Elabuga, Russia</h5>
+        <p class="pl-5">
+          I learned Siemens Tia Portal · SCL · Analytical Skills · Persistence ·
+          Electrical Troubleshooting · Attention to Detail, and also Basic
+          Russian Language
+        </p>
+        <img class="w-1/3 mt-4" src="images/alabuga.jpg" alt="alabuga" />
+      </div>
+      <hr class="my-8" />
+      <div class="schoolwrap">
+        <h3 class="text-lg font-bold pt-5">
+          Techdev with Cisco - Cybersecurity
+        </h3>
+        <h5 class="pb-4">June 2023 - September 2023, Remote</h5>
+        <p class="pl-5">
+          I learned fundamentals of cybersecurity, cyber security essentials,
+          cloud security, and security management courses.
+        </p>
+        <img class="w-1/3 mt-4" src="images/cyber.jpg" alt="cyber" />
+      </div>
+      <div class="projects mt-8">
+        <h4 class="text-lg font-bold">Other projects:</h4>
+        <ul>
+          <li>Apple clone</li>
+          <li>Netflix clone</li>
+          <li>Slot machine</li>
         </ul>
-           
-           
-          
-                <p id="p1">&copy; All rights reserved.</p>
-            <p id="p2">2023Gc  Bisrat portfolio.</p>
-    </footer>
-    
-    
+      </div>
+    </section>
+    <hr />
+  
+<footer class="container bg-emerald-100 w-full mb-1 pb-0 ">
+    <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+        <div class="mb-4 md:mb-0 md:mr-8">
+            <a href="https://mail.google.com/mail/bisratmelak1@gmail.com" class="flex items-center text-black">
+                <img id="gmail" class="w-12 h-12 mr-2" src="images/gmail.png" alt="gmail"> bisratmelak1@gmail.com
+            </a>
+        </div>
 
-</body>
+        <div class="flex flex-col md:flex-row">
+            <ul class="mb-4 md:mb-0 md:mr-8">
+                <li><a href="Home.html" class="text-black">Home</a></li>
+                <li><a href="aboutme.html" class="text-black">About me</a></li>
+                <li><a href="skills.html" class="text-black">Skills</a></li>
+            </ul>
+            <ul class="mb-4 md:mb-0 md:mr-8">
+                <li><a href="Explorewithme.html" class="text-black">Explore with me</a></li>
+                <li><a href="hobbies.html" class="text-black">Hobbies</a></li>
+            </ul>
+            <ul>
+                <li><a href="Education.html" class="text-black">Education</a></li>
+                <li><a href="contactme.html" class="text-black">Contact me</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between items-center">
+        <p id="p1" class="text-black mb-4 md:mb-0">&copy; All rights reserved.</p>
+        <p id="p2" class="text-black">2023Gc Bisrat portfolio.</p>
+    </div>
+</footer>
+  </body>
 </html>
