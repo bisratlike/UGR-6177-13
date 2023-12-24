@@ -4,45 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        
-        <nav>
-                <a href="Home.html"> <img class="logo" src="images/orginallogo.png" alt="my logo"></a>
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="aboutme.html">About me</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="Education.html">Education</a></li>
-                    <li><a href="hobbies.html">Hobbies</a></li>
-                    <li><a href="Explorewithme.html">Explore with me</a></li>
-                    <li><a href="contactme.html">Contact me</a></li>
-                </ul>
+    <header class=" card-header mb-4 pl-2"><nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="container">
+    
+            <a class="navbar-brand mr-5 float-lg-start" src="Home.html">
+    
+                <img src="images/orginallogo.png" alt="my logo" width="40" height="40" class="pr-5">
+    
+            </a>
+            <button class="navbar-toggler" type="button" id="dropdownButton" data-bs-toggle="collapse"  data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
             
+            </button>
+    
+            <div class="navbar-collapse collapse" id="navbarMenu">
+
+                <div class="navbar-nav gap-3" id="dropdownNav">
+                  <ul class="list-unstyled d-lg-flex fw-light " >
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="aboutme.html">About me</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="Education.html">Education</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="hobbies.html">Hobbies</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="Explorewithme.html">Explore with me</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="contactme.html">Contact me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <h2>my Technical Skills</h2>
-    <table>
+    <h2 class="p-5 ">my Technical Skills</h2>
+    <table class="m-5  d-flex align-item-center">
         <tr>
-          <td><img src="images/python.jpeg" alt="Image 1"></td>
-          <td><img src="images/dsa.png" alt="Image 2"></td>
-          <td><img src="images/react.png" alt="Image 3"></td>
-          <td><img src="images/mongodb.jpeg" alt="Image 4"></td>
+          <td><img src="images/python.jpeg" alt="Image 1" width="128" height="128" class="img-fluid"></td>
+          <td><img src="images/dsa.png" alt="Image 2" width="128" height="128" class="img-fluid"></td>
+          <td><img src="images/react.png" alt="Image 3" width="128" height="128" class="img-fluid"></td>
+          <td><img src="images/mongodb.jpeg" alt="Image 4" width="128" height="128" class="img-fluid"></td>
         </tr>
         <tr>
-          <td><img src="images/nodejs.png" alt="Image 5"></td>
-          <td><img src="images/sql.png" alt="Image 6"></td>
-          <td><img src="images/html.png" alt="Image 7"></td>
-          <td><img src="images/GitHub.png" alt="Image 8"></td>
+          <td><img src="images/nodejs.png" alt="Image 5" width="128" height="128" class="img-fluid"></td>
+          <td><img src="images/sql.png" alt="Image 6" width="128" height="128" class="img-fluid"></td>
+          <td><img src="images/html.png" alt="Image 7" width="128" height="128" class="img-fluid"></td>
+          <td><img src="images/GitHub.png" alt="Image 8"width="128" height="128" class="img-fluid"></td>
         </tr>
       </table>
-    <h2>my Soft Skills</h2>
+    <h2 class="p-4">my Soft Skills</h2>
     <!-- Communication skill , fast learner, determined, creative, dedicated,
 easily adoptive, attention to details, problem solving Skill -->
-   <ul class="softskill">
+   <ul class=" m-2">
     <li>Determined</li>
     <li>Creative</li>
     <li>Fast Learner</li>
@@ -52,29 +81,27 @@ easily adoptive, attention to details, problem solving Skill -->
     <li>Leadership skill</li>
     <li>fast learner</li>
    </ul>
-   <p> in addition to this i am certified in proffessional sales </p>
+   <p class="m-3"> in addition to this i am certified in proffessional sales </p>
 
-  <section class="projects">
-    <h2>some projects</h2>
-    <div class="pro">
-        <h3 class="proname">
-            Apple clone
-        </h3>
+  <section class="m-4" >
+    <h2 class="p-4">some projects</h2>
+    <div class="pl-4">
+        <h6 > Apple clone</h6>
         <p>the same with apple website.  i used Html, css and bootstrap to build it</p>
     </div>
-    <div class="pro">
-        <h3 class="proname"> Slot Machine</h3>
+    <div class="pl-4">
+        <h6 > Slot Machine</h6>
         <p>this one is simple gambling machine. i built it using javascript by nodejs . it doesn't have front-end part</p>
 
     </div>
-    <div class="pro">
-        <h3 class="proname"> The Missing Piece</h3>
+    <div class="pl-4">
+        <h6 > The Missing Piece</h6>
         <p> this one is a website for sharing puzzles. i built it with my hackathon teams, we used react for front-end and rubyonrails for back-end part.</a>
         </p>
 
     </div>
-    <div class="pro">
-        <h3 class="proname"> Netflix clone</h3>
+    <div class="pl-4">
+        <h6 > Netflix clone</h6>
         <p>i built a clone of netflix by using pure HTML and CSS</p>
 
     </div>
@@ -84,23 +111,41 @@ easily adoptive, attention to details, problem solving Skill -->
 
 <hr>
 
-    <footer>
-        <figure><a href="https://mail.google.com/mail/bisratmelak1@gmail.com"> <img id="gmail" src="images/gmail-logo.webp" alt="gmail"> bisratmelak1@gmail.com</a></figure>
-
-        <ul class="footerlist">
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="aboutme.html">About me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="Explorewithme.html">Explore with me</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="Education.html">Education</a></li>
-            <li><a href="contactme.html">Contact me</a></li>
+<footer class="row bg-success bg-opacity-25">
+    <figure class="col-lg-4"><a class="text-dark" href="https://mail.google.com/mail/bisratmelak1@gmail.com"> <img id="gmail" src="images/gmail-logo.webp" alt="gmail" class="img-fluid" width="48" height="48"> bisratmelak1@gmail.com</a></figure>
+    <div class="col-lg-8">
+        <ul class=" container row list-unstyled " >
+            <li class=" col-md-6 col-lg-4 text-center"><a class="text-dark" href="Home.html">Home</a></li>
+            <li class="col-md-6 col-lg-4 text-center"><a class="text-dark"   href="aboutme.html">About me</a></li>
+            <li class="col-md-6 col-lg-4 text-center"><a class="text-dark"   href="skills.html">Skills</a></li>
+            <li class="col-md-6 col-lg-4 text-center"><a class="text-dark"  href="Explorewithme.html">Explore with me</a></li>
+            <li class="col-md-6 col-lg-4 text-center"><a class="text-dark"  href="hobbies.html">Hobbies</a></li>
+            <li class="col-md-6 col-lg-4 text-center" ><a class="text-dark"  href="Education.html">Education</a></li>
+            <li class="col-md-6 col-lg-4 text-center"><a class="text-dark"  href="contactme.html">Contact me</a></li>
         </ul>
            
-           
+    </div>
+    
+       
+      <div class="row">
           
-                <p id="p1">&copy; All rights reserved.</p>
-            <p id="p2">2023Gc  Bisrat portfolio.</p>
-    </footer>
+                <p class="col">&copy; All rights reserved.</p>
+            <p class="col text-right">2023Gc  Bisrat portfolio.</p>
+      </div>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/popper.min.js"></script>
+
+<script>
+    document.getElementById('dropdownButton').addEventListener('click', function() {
+        var dropdownNav = document.getElementById('dropdownNav');
+        if ( dropdownNav.style.display=== "" ||  dropdownNav.style.display === 'none') {
+            dropdownNav.style.display = 'block';
+        } else {
+            dropdownNav.style.display = 'none';
+        }
+    });
+</script>
 </body>
 </html>

@@ -3,70 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bisrat's portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        
-        <nav>
+    <header class=" card-header mb-4 pl-2"><nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="container">
+    
+            <a class="navbar-brand mr-5 float-lg-start" src="Home.html">
+    
+                <img src="images/orginallogo.png" alt="my logo" width="40" height="40" class="pr-5">
+    
+            </a>
+            <button class="navbar-toggler" type="button" id="dropdownButton" data-bs-toggle="collapse"  data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
             
-                <a href="Home.html"> <img class="logo" src="images/orginallogo.png" alt="my logo"></a>
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="aboutme.html">About me</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="Education.html">Education</a></li>
-                    <li><a href="hobbies.html">Hobbies</a></li>
-                    <li><a href="Explorewithme.html">Explore with me</a></li>
-                    <li><a href="contactme.html">Contact me</a></li>
-                    
-            </ul>
+            </button>
+    
+            <div class="navbar-collapse collapse" id="navbarMenu">
+
+                <div class="navbar-nav gap-3" id="dropdownNav">
+                  <ul class="list-unstyled d-lg-flex fw-light " >
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="aboutme.html">About me</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="Education.html">Education</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="hobbies.html">Hobbies</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="Explorewithme.html">Explore with me</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="contactme.html">Contact me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-<div class="container">
+<div class="container flex align-content-center list-unstyled ">
             <figure>   
-            <a href="https://github.com/bisratlike"><img src="images/GitHub.png" alt="github">contact me on GitHub</a>
+            <a class="text-dark" href="https://github.com/bisratlike"><img src="images/GitHub.png" alt="github" width="100" height="100" class="img-fluid">contact me on GitHub</a>
                    </figure>
                    <figure>
-            <a href="https://leetcode.com/bisratlike/"><img src="images/leetcode.png" alt="leetcode"> check my Leetcode</a>
+            <a class="text-dark" href="https://leetcode.com/bisratlike/"><img src="images/leetcode.png" alt="leetcode" width="100" height="100" class="img-fluid"> check my Leetcode</a>
                    </figure>
                    <figure>
-            <a href="https://www.linkedin.com/in/bisrat-melak/"><img src="images/LinkedIn_logo_initials.png.webp" alt="linkedin"> Let's connect on linkedin</a>
+            <a class="text-dark" href="https://www.linkedin.com/in/bisrat-melak/"><img src="images/linkedin.png" alt="linkedin" width="80" height="80" class="img-fluid"> Let's connect on linkedin</a>
                    </figure>
                    <figure>
-            <a href="https://t.me/befiyona"><img src="images/Telegram_logo.svg.webp" alt="telegram">contact me on Telegram</a>
+            <a class="text-dark" href="https://t.me/befiyona"><img src="images/telegram.jpeg" alt="telegram" width="80" height="80" class="img-fluid">contact me on Telegram</a>
                    </figure>
                    <figure>
-            <a href="https://instagram.com/ethio_lifey?igshid=YzAwZjE1ZTI0Zg=="><img src="images/Instagram.webp" alt="Instagram">follow me on instagram</a>
+            <a class="text-dark" href="https://instagram.com/ethio_lifey?igshid=YzAwZjE1ZTI0Zg=="><img src="images/instagram.jpeg" alt="Instagram" width="100" height="100" class="img-fluid">follow me on instagram</a>
                    </figure>
         </div>
-        <form action="get">
-            <label for="message">Send message</label>
-             <textArea id="message" ></textArea>
-            <button >Send</button>
+        <form action="get" class="m-5">
+            <label for="message" class="form-label">Send message</label>
+             <textArea id="message" class=" w-90 w-md-50 form-control" ></textArea>
+            <button class="btn btn-success text-center m-3" >Send</button>
         </form>
         
 
 
-
-    <footer>
-        <figure><a href="https://mail.google.com/mail/bisratmelak1@gmail.com"> <img id="gmail" src="images/gmail-logo.webp" alt="gmail"> bisratmelak1@gmail.com</a></figure>
-
-        <ul class="footerlist">
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="aboutme.html">About me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="Explorewithme.html">Explore with me</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="Education.html">Education</a></li>
-            <li><a href="contactme.html">Contact me</a></li>
-        </ul>
-           
-           
-          
-                <p id="p1">&copy; All rights reserved.</p>
-            <p id="p2">2023Gc  Bisrat portfolio.</p>
-    </footer> 
+        <footer class="row bg-success bg-opacity-25">
+            <figure class="col-lg-4"><a class="text-dark" href="https://mail.google.com/mail/bisratmelak1@gmail.com"> <img id="gmail" src="images/gmail-logo.webp" alt="gmail" class="img-fluid" width="48" height="48"> bisratmelak1@gmail.com</a></figure>
+            <div class="col-lg-8">
+                <ul class=" container row list-unstyled " >
+                    <li class=" col-md-2 col-lg-4 text-center"><a class="text-dark" href="Home.html">Home</a></li>
+                    <li class="col-md-2 col-lg-4 text-center"><a class="text-dark"   href="aboutme.html">About me</a></li>
+                    <li class="col-md-6 col-lg-4 text-center"><a class="text-dark"   href="skills.html">Skills</a></li>
+                    <li class="col-md-6 col-lg-4 text-center"><a class="text-dark"  href="Explorewithme.html">Explore with me</a></li>
+                    <li class="col-md-6 col-lg-4 text-center"><a class="text-dark"  href="hobbies.html">Hobbies</a></li>
+                    <li class="col-md-6 col-lg-4 text-center" ><a class="text-dark"  href="Education.html">Education</a></li>
+                    <li class="col-md-6 col-lg-4 text-center"><a class="text-dark"  href="contactme.html">Contact me</a></li>
+                </ul>
+                   
+            </div>
+            
+               
+              <div class="row">
+                  
+                        <p class="col">&copy; All rights reserved.</p>
+                    <p class="col text-right">2023Gc  Bisrat portfolio.</p>
+              </div>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    
+    <script>
+        document.getElementById('dropdownButton').addEventListener('click', function() {
+            var dropdownNav = document.getElementById('dropdownNav');
+            if ( dropdownNav.style.display=== "" ||  dropdownNav.style.display === 'none') {
+                dropdownNav.style.display = 'block';
+            } else {
+                dropdownNav.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>

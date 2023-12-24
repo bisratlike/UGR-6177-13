@@ -4,191 +4,260 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
    
 </head>
 <body>
-    <header>
-        
-        <nav>
-                <a href="Home.html"> <img class="logo" src="images/orginallogo.png" alt="my logo"></a>
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="aboutme.html">About me</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="Education.html">Education</a></li>
-                    <li><a href="hobbies.html">Hobbies</a></li>
-                    <li><a href="Explorewithme.html">Explore with me</a></li>
-                    <li><a href="contactme.html">Contact me</a></li>
-                </ul>
+    <header class=" card-header mb-4 pl-2"><nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="container">
+    
+            <a class="navbar-brand mr-5 float-lg-start" src="Home.html">
+    
+                <img src="images/orginallogo.png" alt="my logo" width="40" height="40" class="pr-5">
+    
+            </a>
+            <button class="navbar-toggler" type="button" id="dropdownButton" data-bs-toggle="collapse"  data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
             
+            </button>
+    
+            <div class="navbar-collapse collapse" id="navbarMenu">
+
+                <div class="navbar-nav gap-3" id="dropdownNav">
+                  <ul class="list-unstyled d-lg-flex fw-light " >
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="aboutme.html">About me</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="Education.html">Education</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="hobbies.html">Hobbies</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="Explorewithme.html">Explore with me</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="contactme.html">Contact me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <section class="video-section">
-        <h1>from some of</h1>
-        <figure>
-            <video src="images/tripvideo.mp4" controls></video>
-    
-            <figcaption>A trip in <i>naberzhini chelni, russia.</i>  July.2023</figcaption>
-    
-        </figure>
-        
-          
-          
-    </section>
- <section class="visted">
-    <h2> my Travel history</h2>
-    <article class="ethiopia ">
+    <section class="container">
+        <h1 class="px-5  fw-medium fs-4">highlights from my adventures</h1>
+        <div class="row">
+          <div class=" d-flex justify-content-center">
+            <figure class="col-10">
+              <video src="images/tripvideo.mp4" class="d-block my-4 video-fluid" width="300" height="400"  controls></video>
+              <figcaption class=""> A trip in <i>naberzhini chelni, russia.</i> July.2023</figcaption>
+              </figure>
+             <aside class="d-none d-md-block col-2">  if you want to explore the world with me, <a class="btn btn-success m-3" href="contactme.html">Contact me</a> </aside> 
        
-        <h3>in my country Ethiopia</h3>
-        <div class="slider">
-            <figure class="myslide fade">
-                <figcaption class="txt">Tana,Bahrdar</figcaption>
-            
-            <img src="images/tana.jpg">
-        </figure>
-        
-        <figure class="myslide fade">
-            <figcaption class="txt">Fasiledes,Gonder</figcaption>
-        
-        <img src="images/fasil.jpg">
-        </figure>
-            
-        <figure class="myslide fade">
-            <figcaption class="txt">Gonder city</figcaption>
-        
-        <img src="images/gonder.jpg">
-        </figure>
-            
-        <figure class="myslide fade">
-            <figcaption class="txt">Timket festival</figcaption>
-        
-        <img src="images/tmket.jpg">
-        </figure>
-            
-        <figure class="myslide fade">
-            <figcaption class="txt">Entoto,Addis Ababa</figcaption>
-        
-        <img src="images/entoto.jpg">
-        </figure>
-            <a class="prev" >&#10094;</a>
-              <a class="next" >&#10095;</a>
-            
-            <div class="dotsbox" >
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot" ></span>
-                <span class="dot" ></span>
-                <span class="dot" ></span>
-            </div>
-        
+          </div>
+                        
         </div>
-    </article>
-    <article class="forign">
-        <h3>forign cities </h3>
-        <div class="slider">
-            <figure class="myslide fade">
-                <figcaption class="txt">naberzhini chelni,Russa</figcaption>
-            
-            <img src="images/chelni4.jpg">
-        </figure>
-        
-        <figure class="myslide fade">
-            <figcaption class="txt">Kazan,Russia</figcaption>
-        
-        <img src="images/chelni.jpg">
-        </figure>
-            
-        <figure class="myslide fade">
-            <figcaption class="txt"> kazan at night</figcaption>
-        
-        <img src="images/kazanatnight.jpg">
-        </figure>
-            
-        <figure class="myslide fade">
-            <figcaption class="txt">karmel Mosque,Russia</figcaption>
-        
-        <img src="images/karmelmosque.jpg">
-        </figure>
-        <figure class="myslide fade">
-            <figcaption class="txt">Bouman street,Kazan</figcaption>
-        
-        <img src="images/kazanbowmanstreet,jpg">
-        </figure>
-            
-        <figure class="myslide fade">
-            <figcaption class="txt">syumbike tower,kazan</figcaption>
-        
-        <img src="images/7build.jpg">
-        </figure>
-        <figure class="myslide fade">
-            <figcaption class="txt">Yelabuga,Russia</figcaption>
-        
-        <img src="images/yelabuga.jpg">
-        </figure>
-            
-        <figure class="myslide fade">
-            <figcaption class="txt">Lenin Street,yelabuga</figcaption>
-        
-        <img src="images/yelabugastreet.jpg">
-        </figure>
-        </div>
-
-    </article>
-
-
-
-
- </section>
-<section>
-    <h1>Plan to visit </h1>
-    <ul>
-        <li>in Ethiopia
-        <ul>
-            <li>Dima Giorgis,Amhara region</li>
-            <li>Siemen Mountain</li>
-            <li>Metu </li>
-            <li>Harar</li>
-            <li>Arbaminch</li>
-        </ul>
-</li>
-        <li>foreign
-        <ul>
-            <li>Mombasa,Kenya</li>
-            <li>Paris,france</li>
-            <li>Asmara, Ertirea</li>
-
-
-        </ul>
-</li>
+       
+    </section>
+    <section class="container m-5">
+      <h2 class="skills fs-5 fw-medium p-4">my Travel history</h2>
+      <div class="row">
+        <article class=" col-12 col-md-6 ">
+          <h3 class="fs-5 p-3 fw-medium">in my country Ethiopia</h3>
+          <div id="slider1" class="carousel slide  bg-dark " data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <figure class="carousel-item active">
+                <figcaption class="text-white">Tana,Bahrdar</figcaption>
+                <img class="d-block mx-auto w-50 object-fit-contain my-3" src="images/tana.jpg" alt=" Lake Tana" />
+              </figure>
     
-    </ul>
-</section>
-<aside>
-    <p> if you want to explore the world with me, <a href="contactme">Contact me</a></p>
+              <figure class="carousel-item">
+                <figcaption class="text-white">Fasiledes,Gonder</figcaption>
+                <img class="d-block w-50 mx-auto object-fit-contain my-3" src="images/fasil.jpg" />
+              </figure>
+    
+              <figure class="carousel-item">
+                <figcaption class="text-white">Gonder city</figcaption>
+                <img class="d-block w-50 mx-auto object-fit-contain my-3" src="images/gonder.jpg" />
+              </figure>
+    
+              <figure class="carousel-item">
+                <figcaption class="text-white">Timket festival</figcaption>
+                <img class="d-block w-50 mx-auto object-fit-contain my-3" src="images/tmket.jpg" />
+              </figure>
+    
+              <figure class="carousel-item">
+                <figcaption class="text-white">Entoto,Addis Ababa</figcaption>
+                <img class="d-block w-50 mx-auto object-fit-contain my-3" src="images/entoto.jpg" />
+              </figure>
+            </div>
+            <button class="carousel-control-prev text-dark " type="button" data-bs-target="#slider1" data-bs-slide-to="prev">
+              <span class="carousel-control-prev-icon text-dark" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next text-dark" type="button" data-bs-target="#slider1" data-bs-slide-to="next">
+              <span class="carousel-control-next-icon text-dark" aria--hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#slider1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#slider1" data-bs-slide-to="1"  aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#slider1" data-bs-slide-to="2"  aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#slider1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#slider1" data-bs-slide-to="4"  aria-label="Slide 5"></button>
+            </div>
+          </div>
+  
+          
+        </article>
+        <article class=" col-12 col-md-6 ">
+          <h3 class="fs-5 p-3 fw-medium">foreign cities</h3>
+          <div id="slider2" class="carousel slide bg-dark" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#slider2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" ></button>
+              <button tyoe="button" data-bs-target="#slider2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#slider2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+              <button type="button" data-bs-target="#slider2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#slider2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#slider2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#slider2" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#slider2" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            </div>
+            <div class="carousel-inner">
+              <figure class="carousel-item active">
+                <figcaption class="text-white">Chelni Kazan</figcaption>
+                <img class="d-block w-50 mx-auto my-3" src="images/chelni.jpg" />
+              </figure>
+    
+              <figure class="carousel-item">
+                <figcaption class="text-white">kazan at night</figcaption>
+                <img class="d-block w-50 mx auto my-3" src="images/kazanatnight.jpg" />
+              </figure>
+    
+              <figure class="carousel-item">
+                <figcaption  class="text-white">karmel Mosque,Russia</figcaption>
+                <img class="d-block w-50 mx-auto my-3" src="images/karmelmosque.jpg" />
+              </figure>
+    
+              <figure class="carousel-item">
+                <figcaption class="text-white">Bouman street,Kazan</figcaption>
+                <img class="d-block w-50 mx-auto my-3" src="images/kazanbowmanstreet.jpg" />
+                 
+              </figure>
+    
+              <figure class="carousel-item">
+                <figcaption class="text-white">syumbike tower,kazan</figcaption>
+                <img class="d-block w-50 mx-auto my-3" src="images/7build.jpg" />
+              </figure>
+    
+              <figure class="carousel-item">
+                <figcaption class="text-white">Yelabuga,Russia</figcaption>
+                <img class="d-block w-50 mx-auto my-3" src="images/palace.jpg" />
+              </figure>
+    
+              <figure class="carousel-item">
+                <figcaption class="text-white">Lenin Street,yelabuga</figcaption>
+                <img class="d-block w-50 mx-auto my-3" src="images/yelabugastreet.jpg" />
+              </figure>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider2" data-bs-slide-to="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slider2" data-bs-slide-to="next">
+              <span class="carousel-control-next-icon" aria--hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          
+          </div>
+  
+  
+        </article>
+      </div>
+      
+    </section>
+    <section>
+      <div>
+        
+          <h1 class=" d-flex justify-content-center fw-medium fs-5 m-5" >Plan to visit</h1>
+      </div>
+      <div>
+          <ul class="m-4">
+            <li>
+              in Ethiopia   
+              <ul class="mx-3">
+               <li>Dima Giorgis,Amhara region</li>
+                <li>Siemen Mountain</li>
+                <li>Metu</li>
+                <li>Harar</li>
+                <li>Arbaminch</li>
+              </ul>
+            </li>
+            <li>
+              foreign
+              <ul class="mx-3">
+                <li>Mombasa,Kenya</li>
+                <li>Paris,france</li>
+                <li>Asmara, Ertirea</li>
+              </ul>
+            </li>
+          </ul>       
+      </div>
+      
+    </section>
+
+<aside class="p-4">
+    <p> if you want to explore the world with me, <a class="btn btn-success m-3" href="contactme">Contact me</a></p>
 
 </aside>
 
-
-
-    <footer>
-        <figure><a href="https://mail.google.com/mail/bisratmelak1@gmail.com"> <img id="gmail" src="images/gmail-logo.webp" alt="gmail"> bisratmelak1@gmail.com</a></figure>
-
-        <ul class="footerlist">
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="aboutme.html">About me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="Explorewithme.html">Explore with me</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="Education.html">Education</a></li>
-            <li><a href="contactme.html">Contact me</a></li>
+<footer class="row bg-success bg-opacity-25">
+    <figure class="col-lg-4"><a class="text-dark" href="https://mail.google.com/mail/bisratmelak1@gmail.com"> <img id="gmail" src="images/gmail-logo.webp" alt="gmail" class="img-fluid" width="48" height="48"> bisratmelak1@gmail.com</a></figure>
+    <div class="col-lg-8">
+        <ul class=" container row list-unstyled " >
+            <li class=" col-md-2 col-lg-4 text-center"><a class="text-dark" href="Home.html">Home</a></li>
+            <li class="col-md-2 col-lg-4 text-center"><a class="text-dark"   href="aboutme.html">About me</a></li>
+            <li class="col-md-6 col-lg-4 text-center"><a class="text-dark"   href="skills.html">Skills</a></li>
+            <li class="col-md-6 col-lg-4 text-center"><a class="text-dark"  href="Explorewithme.html">Explore with me</a></li>
+            <li class="col-md-6 col-lg-4 text-center"><a class="text-dark"  href="hobbies.html">Hobbies</a></li>
+            <li class="col-md-6 col-lg-4 text-center" ><a class="text-dark"  href="Education.html">Education</a></li>
+            <li class="col-md-6 col-lg-4 text-center"><a class="text-dark"  href="contactme.html">Contact me</a></li>
         </ul>
            
-           
-          
-                <p id="p1">&copy; All rights reserved.</p>
-            <p id="p2">2023Gc  Bisrat portfolio.</p>
-    </footer>
+    </div>
     
+       
+      <div class="row">
+          
+                <p class="col">&copy; All rights reserved.</p>
+            <p class="col text-right">2023Gc  Bisrat portfolio.</p>
+      </div>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/popper.min.js"></script>
+
+<script>
+    document.getElementById('dropdownButton').addEventListener('click', function() {
+        var dropdownNav = document.getElementById('dropdownNav');
+        if ( dropdownNav.style.display=== "" ||  dropdownNav.style.display === 'none') {
+            dropdownNav.style.display = 'block';
+        } else {
+            dropdownNav.style.display = 'none';
+        }
+    });
+</script>
+
     
 </body>
 </html>
